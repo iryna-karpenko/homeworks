@@ -1,0 +1,56 @@
+.container-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 12px 36px 0 44px;
+}
+
+.language{
+    width: 41px;
+    height: 24px;
+    padding-right: 42px;
+}
+
+.text-header{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.logo{
+    width: 243px;
+    height: 55px;
+}
+
+.content{
+    margin: 100px 24px 497px 44px;
+}
+
+.title, .text, .special-text{
+    font-size: 36px;
+    line-height: 48px;
+}
+
+.title {
+    font-family: 'Roboto';
+    font-weight: 900;
+}
+
+.text{
+    font-family: 'PT Sans';
+    font-weight: 400;
+}
+
+.text-decoration{
+    text-decoration: underline;
+}
+
+.special-text{
+    font-family: 'PT Sans';
+    font-weight: 700;
+}
+
+.text-inside{
+    background-color:  #EDEDED;
+}
