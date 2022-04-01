@@ -22,10 +22,7 @@ main{
     height: 740px;
    margin: 0 auto;
    position: relative;
-  
-        border: 1px solid blue;
     }
-
 
 h1{
     font-size: 34px;
@@ -58,7 +55,6 @@ h1{
     left: 515px;
 }
 
-
 .container_team{
     display: flex;
     justify-content: space-between;
@@ -74,6 +70,44 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.item_card{
+    background-color: transparent;
+    width: 270px;
+    height: 270px;
+    perspective: 1000px;
+}
+
+.item_card_inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.item_card:hover .item_card_inner{
+    transform: rotateY(180deg);
+}
+
+.item_card_front, .item_card_back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+
+.item_card_front{
+    background-color: #bbb;
+    color: black;
+}
+
+.item_card_back{
+    transform: rotateY(180deg);
+    background-color: #18B5DC;
 }
 
 .card{
@@ -95,21 +129,17 @@ h1{
     align-items: center;
     align-content: center;
     top: 114px;
-    /* left: 68px; */
     justify-content: space-between;
 }
-
 .social{
     width: 42px;
     height: 42px;
     background-color: rgba(255, 255, 255, 0.3);
     position: relative;
-
 }
 
 .social:hover{
     transform: scale(1.1);
-
 }
 
 .img_1{
@@ -132,16 +162,20 @@ h1{
 
 .name{
     font-weight: 700;
-font-size: 18px;
-line-height: 22px;
-color: #282528;
-margin-top: 20px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #282528;
+    margin-top: 20px;
 }
 
 .description{
     font-weight: 300;
-font-size: 18px;
-line-height: 22px;
-color: #646464;
+    font-size: 18px;
+    line-height: 22px;
+    color: #646464;
 }
 
+.img{
+    width: 270px;
+    height: 270px;
+}
