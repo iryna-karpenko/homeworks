@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/plagins/jquery.formstyler.css">
+    <link rel="stylesheet" href="assets/plagins/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/css/font.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Forms</title>
+</head>
+
+<body>
+    <div class="page_wrapper">
+        <main>
+            <div class="container">
+                <div class="form_wrap form">
+                    <form method="post" action="#">
+                        <h3 class="h3">Create an Account</h3>
+                        <div class="elem_wrap">
+                            <div class="form_elem name_wrap">
+                                <label for="first_name">First Name</label>
+                                <input type="text" name="first_name" id="first_name">
+                            </div>
+                            <div class="form_elem">
+                                <label for="surname">Last Name</label>
+                                <input type="text" name="first_name" id="surname">
+                            </div>
+                        </div>
+                        <div class="mail_wrap">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email">
+                            <span>We'll never share your email with anyone else.</span>
+                        </div>
+                        <div class="form_elem radio_wrap">
+                            <div class="form_radio gender_box">
+                                <input type="radio" name="gender" value="man" id="man" checked>
+                                <label for="man">Male</label>
+                            </div>
+                            <div class="form_radio">
+                                <input type="radio" name="gender" value="woman" id="woman">
+                                <label for="woman">Female</label>
+                            </div>
+                        </div>
+                        <div class="elem_wrap">
+                            <div class="form_elem name_wrap">
+                                <label for="country">Country</label>
+                                <select name="country" id="country" data-placeholder="Select">
+                                    <option></option>
+                                    <option>Ukraine</option>
+                                    <option>USA</option>
+                                    <option>Norway</option>
+                                    <option>Germany</option>
+                                    <option>Georgia</option>
+                                    <option>Finland</option>
+                                    <option>Estoni</option>
+                                    <option>Poland</option>
+                                    <option>Latvia</option>
+                                    <option>Denmark</option>
+                                </select>
+                            </div>
+                            <div class="form_elem city">
+                                <label for="city">City</label>
+                                <input type="text" name="city" id="city">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn_submit">Sign Up</button>
+                        <div class="text_area">
+                            By clicking the 'Sign Up' button, you confirm that you accept our <br>
+                            <a href="#">
+                                Terms of Use
+                            </a>
+                            and
+                            <a href="#">
+                                Privacy Policy
+                            </a>
+                            .
+                        </div>
+                        <div class="separate_line"></div>
+                        <div class="text_end">Have an account?<a href="#">
+                                Log In
+                            </a>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="form_wrap">
+                    <form method="post" enctype="multipart/form-data" action="#">
+                        <h3 class="h3">Profile</h3>
+                        <div class="field_photo">
+                           <div class="img"> 
+                               <img src="assets/images/Image.png" alt="photo">
+                            </div>
+                            <div class="file_text">
+                            <div class="fake_file_wrap">
+                                <div class="fake_file"></div>
+                                <input type="file" name="file">
+                                <i class="mdi mdi-camera icon"></i>
+                            </div>
+                            <span>Up to 1 MB (300x300 px)</span>
+                        </div>
+                            <button class="btn_trash"> <i class=" icon_trash mdi mdi-delete"></i> </button>
+                        </div>
+                        <div class="elem_wrap">
+                            <div class="form_elem name_wrap">
+                                <label for="name">Name</label>
+                                <input type="text" name="first_name" id="name">
+                            </div>
+                            <div class="form_elem">
+                                <label for="mail">E-mail</label>
+                                <input type="email" id="mail" name="mail">
+                            </div>
+                        </div>
+                        <div class="elem_wrap">
+                            <div class="form_elem name_wrap">
+                                <label for="Country">Country</label>
+                                <select name="country" id="Country" data-placeholder="Select">
+                                    <option></option>
+                                    <option>Ukraine</option>
+                                    <option>USA</option>
+                                    <option>Norway</option>
+                                    <option>Germany</option>
+                                    <option>Georgia</option>
+                                    <option>Finland</option>
+                                    <option>Estoni</option>
+                                    <option>Poland</option>
+                                    <option>Latvia</option>
+                                    <option>Denmark</option>
+                                </select>
+                            </div>
+                            <div class="form_elem city">
+                                <label for="City">City</label>
+                                <input type="text" name="city" id="City">
+                            </div>
+                        </div>
+                        <div class="elem_wrap">
+                            <div class="form_elem name_wrap">
+                                <label for="code">Zip Code</label>
+                                <input type="text" name="code" id="code">
+                            </div>
+                            <div class="form_elem">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn_submit">Update</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/plagins/jquery.formstyler.min.js"></script>
+    <script>
+        (function ($) {
+            $(function () {
+
+                $('select').styler();
+
+            });
+        })(jQuery);
+    </script>
+</body>
+
+</html>
