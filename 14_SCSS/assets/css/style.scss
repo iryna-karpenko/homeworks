@@ -33,7 +33,6 @@ margin: 0;
 box-sizing: border-box;
 }
 
-
 .container{
     max-width: 1920px;
     width: 90%;
@@ -47,7 +46,6 @@ box-sizing: border-box;
     flex-direction: column;
     align-items: center;
     padding-top: 110px;
-    /*margin-bottom: 41px;*/
     .h4{
         @include text($subtitle_color,24px,500);
         @include fz(18px);
@@ -74,18 +72,6 @@ box-sizing: border-box;
     }
 }
 
-.social{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-    a {
-        margin-left: 5px;
-    }
-    a:hover{
-        transform: scale(1.1);
-    }
-}
-
 
 .slider{
     display: flex;
@@ -109,37 +95,31 @@ box-sizing: border-box;
         margin-left: 85px;
         margin-right: 85px;
     }
+}
   
-    &_right{
+    .slider_right{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
             margin-right: 60px;
-            &_info{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin-bottom: 30px;
-
           .name{
             @include text($info_color,42.19px,900);
             @include fz(36px);
             font-family: 'Roboto';
+            margin-bottom: 30px
           }
           .info_line{
             @include divider(100px);
             margin-bottom: 30px;
-            margin-top: 30px;
           }
           .title{
             @include text($info_color,36px,400);
             @include fz(24px);
             font-family: 'Raleway';
+            margin-bottom: 20px;
           }
         }
-    }
-}
 
 .border{
     width: 430px;
@@ -184,6 +164,26 @@ box-sizing: border-box;
 }
 
 
+.social{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 49px;
+    list-style: none;
+    li{
+        +li{
+        margin-left: 5px;
+    }
+    a {
+        display: inline-block;
+        text-decoration: none;
+    }
+    &:hover{
+        transform: scale(1.1);
+    }
+        }
+}
+
+
 p{
     @include  text($text_color,24px,500);
     @include fz(14px);
@@ -195,7 +195,7 @@ p{
 .slider_decore{
     display: flex;
     flex-direction: row;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
     .line_small{
         @include divider(10px);
                 border-bottom: 4px solid $main_color;
@@ -218,4 +218,7 @@ button{
     @include fz(14px);
     font-family: 'Open Sans';
     cursor: pointer;
+    &:hover{
+        transform: scale(1.1);
+}
 }
