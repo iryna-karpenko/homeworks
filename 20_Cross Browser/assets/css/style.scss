@@ -1,0 +1,270 @@
+$subtitle_color:#898F8F;
+$main_color:#FFCC00;
+$info_color:#666666;
+$text_color:#333333;
+$background_color:#FFFFFF;
+
+@mixin text($color,$lh,$fw){
+    color: $color;
+    line-height: $lh;
+    font-weight: $fw;
+}
+
+@mixin divider($wd){
+    width: $wd;
+    border-bottom: 1px solid $main_color;
+}
+
+@mixin image($wd,$ht){
+    width: $wd;
+    height: $ht;
+}
+
+$base_fz: 16px;
+@mixin fz($size_in_px){
+  font-size:($size_in_px/$base_fz)+rem;
+}
+
+@import 'font';
+
+*,*::after,*::before{
+padding: 0;
+margin: 0;
+-webkit-box-sizing: border-box;
+        box-sizing: border-box;
+}
+
+
+.container{
+    max-width: 1920px;
+    width: 90%;
+    margin: 0  auto;
+    background-color: $background_color;
+}
+
+
+.section_head{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 110px;
+    /*margin-bottom: 41px;*/
+    .h4{
+        @include text($subtitle_color,24px,500);
+        @include fz(18px);
+        font-family: 'Raleway';
+        margin-bottom: 15px;
+    }
+    .h1{
+        @include text($main_color,66px,900);
+        @include fz(60px);
+        font-family: 'Roboto';
+        margin-bottom: 30px;
+    }
+    .decorate{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        margin-bottom: 40px;
+      img{
+          @include image(20px,20px);
+      }
+      .line{
+          @include divider(210px);
+          margin-bottom: 10px;
+       }
+    }
+}
+
+.social{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 40px;
+    a {
+        margin-left: 5px;
+    }
+    a:hover{
+        -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+                transform: scale(1.1);
+    }
+}
+
+
+.slider{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 1150px;
+    width: 100%;
+    margin: 0 auto ;
+    &_left{
+        margin-left:60px;
+        img{
+        @include image(400px,400px);
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        }
+    }
+    .divider{
+        display: inline;
+        height: 560px;
+        border-left: 1px solid $main_color;
+        margin-left: 85px;
+        margin-right: 85px;
+    }
+  
+    &_right{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            margin-right: 60px;
+            &_info{
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                margin-bottom: 30px;
+
+          .name{
+            @include text($info_color,42.19px,900);
+            @include fz(36px);
+            font-family: 'Roboto';
+          }
+          .info_line{
+            @include divider(100px);
+            margin-bottom: 30px;
+            margin-top: 30px;
+          }
+          .title{
+            @include text($info_color,36px,400);
+            @include fz(24px);
+            font-family: 'Raleway';
+          }
+        }
+    }
+}
+
+.border{
+    width: 430px;
+    height: 430px;
+    position: relative;
+    .corner_1{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-bottom: 1px solid $main_color;
+        border-left: 1px solid $main_color;
+        width: 100px;
+        height: 100px;
+    }
+    .corner_2{
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-top: 1px solid $main_color;
+        border-left: 1px solid $main_color;
+        width: 100px;
+        height: 100px;
+    }
+    .corner_3{
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-top: 1px solid $main_color;
+        border-right: 1px solid $main_color;
+        width: 100px;
+        height: 100px;
+    }
+    .corner_4{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border-bottom: 1px solid $main_color;
+        border-right: 1px solid $main_color;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+p{
+    @include  text($text_color,24px,500);
+    @include fz(14px);
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Raleway';
+}
+
+.slider_decore{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 25px;
+    .line_small{
+        @include divider(10px);
+                border-bottom: 4px solid $main_color;
+    }
+    .line_middle{
+        @include divider(20px);
+        border-bottom: 4px solid $main_color;
+        margin-right: 5px;
+    }
+    .space{
+        margin-right: 5px;
+    }
+}
+
+button{
+    padding: 5px 10px;
+    border: 1px solid $main_color;
+    background-color: $background_color;
+    @include text($info_color,14px,700);
+    @include fz(14px);
+    font-family: 'Open Sans';
+    cursor: pointer;
+    &:hover{
+        -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+                transform: scale(1.1);
+    }
+}

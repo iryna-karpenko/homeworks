@@ -1,0 +1,77 @@
+$heading_color:#000000;
+$text_color:#565656;
+
+$base_fz: 16;
+@mixin fz($size_in_px){
+  font-size:($size_in_px/$base_fz)+rem;
+}
+
+@mixin text($color, $lh, $ls){
+    color: $color;
+    line-height: $lh;
+    letter-spacing: $ls}
+
+    @mixin heading_text($color, $ls){
+        color: $color;
+        letter-spacing: $ls}
+
+@import 'font';
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+span{
+    display: inline-block;
+    @include fz (16);
+    @include text($heading_color, 24px, 0.5em);
+    font-family: 'Lato';
+    text-transform: uppercase;
+
+}
+
+h1{
+    @include heading_text($heading_color, 0.05em);
+    font-family: 'Red Hat Display';
+}
+
+.pic{
+    picture {
+    width: 100%;
+    height: 100%;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+}
+
+.foto{
+    margin-bottom: 44px;
+}
+
+
+h2{
+    @include fz(23);
+    @include text($heading_color, 38.18px, 0.1em);
+    font-family: 'Red Hat Display';
+    margin-bottom: 40px;
+}
+
+p{
+    @include fz(19);
+    @include text($text_color, 32px, 0.05em);
+    font-family: 'Lato';
+}
+
+.text{
+    padding-right: 20px;
+}

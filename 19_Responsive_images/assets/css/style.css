@@ -1,0 +1,77 @@
+/* lato-regular - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/lato-v22-latin-regular.woff2") format("woff2"), url("../fonts/lato-v22-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* red-hat-display-regular - latin */
+@font-face {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/red-hat-display-v11-latin-regular.woff2") format("woff2"), url("../fonts/red-hat-display-v11-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+span {
+  display: inline-block;
+  font-size: 1rem;
+  color: #000000;
+  line-height: 24px;
+  letter-spacing: 0.5em;
+  font-family: "Lato";
+  text-transform: uppercase;
+}
+
+h1 {
+  color: #000000;
+  letter-spacing: 0.05em;
+  font-family: "Red Hat Display";
+}
+
+.pic picture {
+  width: 100%;
+  height: 100%;
+}
+.pic picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.foto {
+  margin-bottom: 44px;
+}
+
+h2 {
+  font-size: 1.4375rem;
+  color: #000000;
+  line-height: 38.18px;
+  letter-spacing: 0.1em;
+  font-family: "Red Hat Display";
+  margin-bottom: 40px;
+}
+
+p {
+  font-size: 1.1875rem;
+  color: #565656;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  font-family: "Lato";
+}
+
+.text {
+  padding-right: 20px;
+}
