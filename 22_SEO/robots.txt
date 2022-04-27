@@ -5,5 +5,5 @@ Disallow: backup/
 Disallow: tmpl/
 Disallow:func/
 Disallow: vendor/
-Sitemap: 
+Sitemap: https://iryna-karpenko.github.io/homeworks/22_SEO/index.html/sitemap.xml
 host: iryna-karpenko.github.io
