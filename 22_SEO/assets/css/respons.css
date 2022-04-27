@@ -1,0 +1,53 @@
+@media screen and (max-width: 768px) {
+  #main_menu {
+    display: none;
+  }
+
+  .hamb_menu {
+    display: block;
+  }
+
+  .flex {
+    flex-wrap: wrap;
+  }
+  .flex > div {
+    width: 100%;
+  }
+
+  .header_button {
+    display: none;
+  }
+
+  .card-2__content {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header_button {
+    display: none;
+  }
+
+  .card-2__content {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .flex > div.pic {
+    display: none;
+  }
+}
