@@ -1,9 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: admin/
-Disallow: backup/
-Disallow: tmpl/
-Disallow:func/
-Disallow: vendor/
 Sitemap: https://iryna-karpenko.github.io/homeworks/22_SEO/sitemap.xml
-host: iryna-karpenko.github.io
+host: iryna-karpenko.github.io/homeworks/22_SEO
