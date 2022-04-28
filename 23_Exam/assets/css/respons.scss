@@ -9,23 +9,24 @@
 }
 
 @media screen and (max-width:1458px){
-.card_gen{
-height: 354px;
-width: 410px;
-}
-.h4{
+    .container{
+        width: 80%;
+    }
+
+    .h4{
     font-size: 20px;
 }
 .text_item{
     line-height: 18px;
 }
+.features_card{
+    justify-content: center;
+}
+
 }
 
 
 @media screen and (max-width:1370px){
-    .container{
-        width: 80%;
-    }
     .headline{
         margin-bottom: 130px;
     }
@@ -37,9 +38,6 @@ width: 410px;
     .h2{
         font-size: 35px;
         line-height: 41px;
-    }
-    .features_card{
-        justify-content: center;
     }
 }
 
@@ -191,6 +189,88 @@ width: 410px;
     }
 }
 
+@media screen and (max-width:650px){
+    .card_search{
+        position: static;
+        background-image: none;
+        display: flex;
+        transform: translate(0);
+        align-items: baseline;
+        height: fit-content;
+      }
+      .search_img{
+        position: static;
+        img{
+            width: 100%;
+        }
+    }
+    .search_text{
+        position: static;
+        max-width: 100%;
+    }
+    .card_access{
+        position: static;
+        background-image: none;
+        display: flex;
+        transform: translate(0);
+        align-items: baseline;
+        height: fit-content;
+        }
+        .access_img{
+            position: static;
+            img{
+                width: 100%;
+            }
+         }
+        .access_text{
+            position: static;
+            max-width: 100%;
+            }
+    
+        .card_print{
+            position: static;
+            background-image: none;
+            display: flex;
+            transform: translate(0);
+            align-items: baseline;
+            height: fit-content;
+                }
+            .print_img{
+                position: static;
+                img{
+                    width: 100%;
+                }
+                }
+            .print_text{
+                position: static;
+                max-width: 100%;
+                    }
+            .card_security{
+                position: static;
+                background-image: none;
+                transform: translate(0);
+                display: flex;
+                align-items: baseline;
+                height: fit-content;
+                    }
+                .security_img{
+                    position: static;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .security_text{
+                    position: static;
+                    max-width: 100%;
+                }
+    .features{
+        margin-bottom: 150px;
+    }
+
+    }
+
+
+
 @media screen and (max-width:570px){
     .descr{
         line-height: 20px;
@@ -213,77 +293,6 @@ width: 410px;
         
         .testi_pic img{
             width: 30%;
-        }
-        .card_search{
-            position: static;
-            background-image: none;
-            display: flex;
-            transform: translate(0);
-          }
-          .search_img{
-            position: static;
-            img{
-                width: 100%;
-            }
-        }
-        .search_text{
-            position: static;
-            max-width: 100%;
-        }
-        .card_access{
-            position: static;
-            background-image: none;
-            display: flex;
-            transform: translate(0);
-            }
-            .access_img{
-                position: static;
-                img{
-                    width: 100%;
-                }
-             }
-            .access_text{
-                position: static;
-                max-width: 100%;
-                }
-        
-            .card_print{
-                position: static;
-                background-image: none;
-                display: flex;
-                transform: translate(0);
-                    }
-                .print_img{
-                    position: static;
-                    img{
-                        width: 100%;
-                    }
-                    }
-                .print_text{
-                    position: static;
-                    max-width: 100%;
-                        }
-                .card_security{
-                    position: static;
-                    background-image: none;
-                    transform: translate(0);
-                    display: flex;
-                        }
-                    .security_img{
-                        position: static;
-                        img{
-                            width: 100%;
-                        }
-                    }
-                    .security_text{
-                        position: static;
-                        max-width: 100%;
-                            }
-        .features{
-            margin-bottom: 30px;
-        }
-        .card_gen{
-            height: 250px;
         }
         }
          
