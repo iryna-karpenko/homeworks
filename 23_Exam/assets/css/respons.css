@@ -210,6 +210,8 @@
   .testi_card {
     left: 90px;
     bottom: 32px;
+    flex-direction: column;
+    gap: 0;
   }
 
   .testi-bgr .h2 {
@@ -221,11 +223,6 @@
     content: "";
     display: block;
     padding-top: 0;
-  }
-
-  .testi_card {
-    flex-direction: column;
-    gap: 0;
   }
 
   .testi_pic img {
@@ -343,5 +340,9 @@
 
   .h1 {
     font-size: 3rem;
+  }
+
+  .header_button .btn {
+    display: none;
   }
 }

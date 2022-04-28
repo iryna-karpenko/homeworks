@@ -198,6 +198,8 @@ width: 410px;
         .testi_card{
             left: 90px; 
             bottom: 32px;
+            flex-direction: column;
+            gap: 0;
            }
            .testi-bgr .h2{
                color: #212353;
@@ -208,10 +210,7 @@ width: 410px;
             display: block;
             padding-top: 0;
         }
-        .testi_card{
-            flex-direction: column;
-            gap: 0;
-        }
+        
         .testi_pic img{
             width: 30%;
         }
@@ -308,11 +307,15 @@ width: 410px;
 }
         }
 
+
 @media screen and (max-width:420px){
            header .container {
             flex-wrap: wrap;
             }
             .h1{
                 font-size: 3rem;
+            }
+            .header_button .btn{
+                display: none;
             }
         }
